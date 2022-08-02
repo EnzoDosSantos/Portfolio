@@ -1,6 +1,6 @@
 import "./App.css"
 import Intro from "./components/into/Intro"
-import NavBar from "./components/NavBar/NavBAr"
+import NavBar from "./components/NavBar/NavBar"
 import Portfolio from "./components/portfolio/Portfolio"
 import Services from "./components/services/Services"
 
