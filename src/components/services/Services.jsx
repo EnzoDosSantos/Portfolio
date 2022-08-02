@@ -29,7 +29,7 @@ const Services = () => {
                 <div className="blurs-blurl" style={{ background: "#ABF1FF94" }}></div>
             </div>
             <div className="title-skills">
-                <span>¿Con qué herramientas puedo aa</span>
+                <span>¿Con qué herramientas puedo</span>
                 <span>trabajar?</span>
                 <div className="cards">
                         <Postgres />
