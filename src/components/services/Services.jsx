@@ -1,7 +1,3 @@
-
-// import frontEnd from '../../assets/frontend.png'
-// import backEnd from '../../assets/backend.png'
-// import Card from '../../components/Card/Card'
 import Postgres from '../../assets/svg/postgres'
 import Mongoose from '../../assets/svg/mongoose'
 import MongoDB from '../../assets/svg/mongodb'
@@ -12,7 +8,7 @@ import React from '../../assets/svg/react'
 import Css from '../../assets/svg/css'
 import Html from '../../assets/svg/html'
 import Js from '../../assets/svg/js'
-import cv from '../../assets/data/EnzoFacundoDosSantosCV.pdf'
+import cv from '../../assets/data/EnzoDosSantosCV.pdf'
 import './Services.css'
 
 const Services = () => {

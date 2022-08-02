@@ -11,7 +11,7 @@ const Card = ({ img, title, detail, link }) => {
                 <a href={link}
                     target="_blank"
                 >
-                    <i className="fab fa-github">{link}</i>
+                    <i>{link}</i>
                 </a>
             </span>
             </div>

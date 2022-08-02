@@ -33,12 +33,12 @@
     font-weight: 100;
     font-size: 18px;
     color: var(--gray);
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
 .i-button{
     width: 6rem;
-    height: 2rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
 }
@@ -47,6 +47,11 @@
     width: 3rem;
     height: 3rem;
     margin-right: 1rem;
+}
+
+.i-icons > :nth-child(2) > img{
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .i-icons > a > img:hover{
@@ -61,15 +66,4 @@
 .i-right > *{
     position: absolute;
     z-index: -1;
-}
-.i-right > :nth-child(1){
-    transform: scale(1.5);
-    top: 10%;
-    left: -10%;
-}
-
-.i-right > :nth-child(3){
-    transform: scale(1.3);
-    left: 8.5rem;
-    bottom: 8.3rem;
 }

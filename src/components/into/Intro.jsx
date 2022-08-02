@@ -1,8 +1,8 @@
 import GitHub from '../../assets/github.png'
 import LinkedIn from '../../assets/linkedin.png'
-import vector1 from '../../assets/vector1.png'
-import vector2 from '../../assets/vector2.png'
-import me from '../../assets/me2.png'
+// import vector1 from '../../assets/vector1.png'
+// import vector2 from '../../assets/vector2.png'
+import me from '../../assets/yop.png'
 import './Intro.css'
 
 const Intro = () => {
@@ -28,8 +28,8 @@ const Intro = () => {
                 </div>
             </div>
             <div className="i-right">
-                <img src={vector1} alt="vector1" />
-                <img src={vector2} alt="vector2" />
+                {/* <img src={vector1} alt="vector1" />
+                <img src={vector2} alt="vector2" /> */}
                 <img src={me} alt="me" />
             </div>
         </div>
