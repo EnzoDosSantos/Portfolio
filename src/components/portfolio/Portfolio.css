@@ -1,0 +1,30 @@
+.portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: -13rem;
+}
+
+.portfolio>:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.portfolio>:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.p-items{
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+    height: 350px;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 1.5rem;
+}

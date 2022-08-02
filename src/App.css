@@ -1,41 +1,40 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+    --yelow: #F5C32C;
+    --orange: #FCA61F;
+    --black: #242D49;
+    --gray: #788097;
+    --white: #f5f5f5;
+    --navBar: #9299ae;
+    --blueCard: #DDF8FE;
+    --purple: #DDF8FE;
+    --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App{
+    padding: 0.5rem 3.5rem;
+    overflow: hidden;
+    color: var(--black);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button{
+    font-size: 16px;
+    border-radius: 34px;
+    border: none;
+    color: #F1F1F1;
+    padding: 11px 26px;
+    background:linear-gradient(180deg,#fdc50f 26.71%,#fb982f 99.36%);
+    box-shadow:0px 20px 24px 3px rgba(237, 170, 83, 0.42);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.button:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+    color:var(--orange);
+    border: 1px solid var(--orange);
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+*{
+    font-family: 'Roboto', sans-serif;
 }
