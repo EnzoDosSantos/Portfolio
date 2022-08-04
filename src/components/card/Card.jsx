@@ -6,7 +6,8 @@ const Card = ({ img, title, detail, link }) => {
             <div className="c-wrapper">
             <img src={img} alt="img" />
             <span>{title}</span>
-            <span>{detail}</span>
+            <span>{detail} </span>
+            <div className="c-conteiner-data">
             <span>Repositorio:
                 <a href={link}
                     target="_blank"
@@ -14,6 +15,7 @@ const Card = ({ img, title, detail, link }) => {
                     <i>{link}</i>
                 </a>
             </span>
+            </div>
             </div>
         </div>
     )

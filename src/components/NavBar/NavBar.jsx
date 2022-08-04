@@ -1,34 +1,59 @@
+import { useEffect, useRef, useState } from 'react';
 import './NavBar.css'
 
-const NavBar = () => {
+const NavBar = ({ services, portfolio, contact, intro }) => {
+    const [isOpen, setIsOpen] = useState(false)
+    const home = useRef(null)
+    const ref = useRef(null)
+
+    const scrollToSeccion = (ref) => {
+        if(ref === home) {
+            return window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        }
+        if(ref === intro){
+            return window.scrollTo({
+                top: ref.current.offsetTop - 100,
+                behavior: "smooth",
+            })
+        }
+        return window.scrollTo({
+            top: ref.current.offsetTop + 90,
+            behavior: "smooth",
+        })
+    }
+
+    useEffect(() => {
+        const changeNavbarState = () => {
+            if (Number(window.scrollY) >= 70) {
+                return setIsOpen(true)
+            }
+            return setIsOpen(false)
+        }
+        window.addEventListener('scroll', changeNavbarState)
+    } , [])
+    
+    const name = "</Enzo Dos Santos>"
+
+
     return (
-        <div className="navbar">
+        <nav ref={ref} className={isOpen ? "navbar active" : "navbar"}>
             <div className='n-wrapper'>
                 <div className="n-left">
-                    <div className="n-name">EnzoDS</div>
-                    <label className="switch">
-                        <input type="checkbox" />
-                        <span className="slider"></span>
-                    </label>
+                    <div className="n-name">{name}</div>
                 </div>
                 <div className="n-right">
                     <div className="n-list">
                         <ul>
-                            {/* <a href="#Home"> */}
-                            <li>Home</li>
-                            {/* </a> */}
-                            {/* <a href="#About"> */}
-                            <li>Sobre mi</li>
-                            {/* </a> */}
-                            {/* <a href="#Skills"> */}
-                            <li>Habilidades</li>
-                            {/* </a> */}
-                            {/* <a href="#Proyects"> */}
-                            <li>Proyectos</li>
-                            {/* </a> */}
+                            <li onClick={() => scrollToSeccion(home)}>Home</li>
+                            <li onClick={() => scrollToSeccion(intro)}>Sobre mi</li>
+                            <li onClick={() => scrollToSeccion(services)}>Habilidades</li>
+                            <li onClick={() => scrollToSeccion(portfolio)}>Proyectos</li>
                         </ul>
                     </div>
-                    <button className='n-button'>
+                    <button onClick={() => scrollToSeccion(contact)}  className='n-button'>
                         <div className='svg-wrapper-1'>
                             <div className="svg-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -41,7 +66,7 @@ const NavBar = () => {
                     </button>
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }
 

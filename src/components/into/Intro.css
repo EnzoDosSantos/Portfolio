@@ -1,7 +1,7 @@
 .intro{
     display: flex;
     height: 77vh;
-    margin-top: 8rem;
+    margin-top: 12rem;
 }
 
 .i-left{
@@ -27,6 +27,7 @@
     color: var(--orange);
     font-size: 3rem;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .i-name >:nth-child(3){
@@ -34,13 +35,6 @@
     font-size: 18px;
     color: var(--gray);
     margin-top: 12px;
-}
-
-.i-button{
-    width: 6rem;
-    height: 2.5rem;
-    display: flex;
-    justify-content: center;
 }
 
 .i-icons > a > img{
@@ -64,4 +58,20 @@
 
 .i-right > *{
     margin-right: 10px;
+}
+
+@media screen and (max-width: 480px){
+    .intro{
+        height: auto;
+        overflow-x: hidden;
+    }
+    .i-left{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .i-right{
+        position: relative;
+        left: 50px;
+    }
 }

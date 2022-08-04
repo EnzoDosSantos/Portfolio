@@ -1,0 +1,102 @@
+.contact {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.c-top> :nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.c-top> :nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.c-buttom {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.c-buttom > :nth-child(1) > :nth-child(1){
+    display: flex;
+    flex-direction: column;
+}
+
+.c-buttom > :nth-child(1) > :nth-child(2){
+    border: none;
+    outline: none;
+    color: var(--white);
+    background-color: var(--orange);
+    border-radius: 20px;
+    width: 450px;
+    height: 50px;
+}
+
+.c-buttom > :nth-child(1) > :nth-child(2):hover{
+    transition: ease-in-out 0.2s;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+
+.c-input > input {
+    margin-bottom: 1rem;
+    width: 450px;
+    height: 40px;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.c-input > textarea {
+    margin-bottom: 1rem;
+    width: 450px;
+    height: 150px;
+    color: var(--white);
+    background-color: var(--black);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 0.8  rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    padding-left: 4px;
+}
+
+@media screen and (max-width: 480px){
+    .contact{
+        flex-direction: column;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .c-buttom > :nth-child(1) > :nth-child(2){
+        width: 450px;
+        margin-left: 10px;
+    }
+}

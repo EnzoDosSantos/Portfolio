@@ -3,9 +3,9 @@ import sm from '../../assets/Script_Music.png'
 import pi from '../../assets/App_Gamery.png'
 import './Portfolio.css'
 
-const Portfolio = () => {
+const Portfolio = ({ innerRef }) => {
     return (
-        <div className="portfolio">
+        <section ref={innerRef} className="portfolio">
             <span>Mis Proyectos</span>
             <span>recientes</span>
             <div className="p-items">
@@ -22,7 +22,7 @@ const Portfolio = () => {
                 link={"https://github.com/EnzoDosSantos/PI-VideoGames"}
                 />
             </div>
-        </div>
+        </section>
     )
 }
 

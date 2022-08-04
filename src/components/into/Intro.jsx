@@ -1,13 +1,11 @@
 import GitHub from '../../assets/github.png'
 import LinkedIn from '../../assets/linkedin.png'
-// import vector1 from '../../assets/vector1.png'
-// import vector2 from '../../assets/vector2.png'
 import me from '../../assets/yop.png'
 import './Intro.css'
 
-const Intro = () => {
+const Intro = ({ innerRef }) => {
     return (
-        <div className="intro">
+        <section ref={innerRef} className="intro">
             <div className="i-left">
                 <div className="i-name">
                     <span>Hola, yo soy</span>
@@ -17,7 +15,6 @@ const Intro = () => {
                          y dar lo mejor de mi en lo que me proponga.
                     </span>
                 </div>
-                <button className="button i-button">Contactame</button>
                 <div className="i-icons">
                     <a href='https://github.com/EnzoDosSantos'>
                     <img src={GitHub} alt="github" />
@@ -28,11 +25,9 @@ const Intro = () => {
                 </div>
             </div>
             <div className="i-right">
-                {/* <img src={vector1} alt="vector1" />
-                <img src={vector2} alt="vector2" /> */}
                 <img src={me} alt="me" />
             </div>
-        </div>
+        </section>
     )
 }
 

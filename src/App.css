@@ -4,7 +4,7 @@
     --black: #242D49;
     --gray: #788097;
     --white: #f5f5f5;
-    --navBar: #9299ae;
+    --input: #9299ae;
     --blueCard: #DDF8FE;
     --purple: #DDF8FE;
     --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.08);
@@ -36,5 +36,19 @@
 }
 
 *{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: "Poppins",sans-serif;
+    /* font-family: monospace; */
+
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 480px){
+    .App{
+        padding: 0.5rem 1rem;
+    }
 }

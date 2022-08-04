@@ -11,9 +11,9 @@ import Js from '../../assets/svg/js'
 import cv from '../../assets/data/EnzoDosSantosCV.pdf'
 import './Services.css'
 
-const Services = () => {
+const Services = ({ innerRef }) => {
     return (
-        <div className="services">
+        <section ref={innerRef} className="services">
             <div className="awesome">
                 <span>Mis conocimientos</span>
                 <span>actuales</span>
@@ -26,7 +26,7 @@ const Services = () => {
                 <a href={cv} download>
                     <button className="button s-button">Descargar CV</button>
                 </a>
-                <div className="blurs-blurl" style={{ background: "#ABF1FF94" }}></div>
+                {/* <div className="blurs-blurl" style={{ background: "#ABF1FF94" }}></div> */}
             </div>
             <div className="title-skills">
                 <span>¿Con qué herramientas puedo</span>
@@ -42,8 +42,8 @@ const Services = () => {
                         <span>EXPRESS</span>
                         <Node />
                         <span>NODEJS</span>
-                        </div>
-                        <div className="cards1">
+                        {/* </div>
+                        <div className="cards1"> */}
                         <Redux />
                         <span>REDUX</span>
                         <React />
@@ -56,7 +56,7 @@ const Services = () => {
                         <span>JAVASCRIPT</span>
                     </div>
             </div>
-        </div>
+        </section>
     )
 }
 

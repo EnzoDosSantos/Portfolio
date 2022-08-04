@@ -1,10 +1,11 @@
 .services {
     padding: 0.3rem 0.3rem;
     display: flex;
-    height: 55vh;
-    margin-bottom: 8rem;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-bottom: 12rem;
     margin-top: 12rem;
-    margin-bottom: 13rem;
     padding-top: 6rem;
 }
 
@@ -24,12 +25,13 @@
     color: var(--orange);
     font-size: 2.5rem;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .awesome > :nth-child(3){
     color: var(--gray);
     font-size: 18px;
-    margin-top: 1rem;
+    margin-top: 12px;
 }
 
 .awesome > :nth-child(4){
@@ -42,7 +44,7 @@
     align-items: center;
     width: 8rem;
     height: 3rem;
-    margin-top: 0.40rem;
+    margin-top: 12px;
 }
 
 
@@ -67,14 +69,17 @@
     color: var(--orange);
     font-size: 2.5rem;
     font-weight: bold;
+    margin-top: 5px;
 }
 
 .cards{
-    margin-top: 1rem;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: row;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
 }
 
 .cards > span {
@@ -82,14 +87,41 @@
     font-size: 18px;
 }
 
-.cards1 > span {
+/* .cards1 > span {
     color: var(--gray);
     font-size: 18px;
 }
 
 .cards1{
-    margin-top: 1.30rem;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+
+@media screen and (max-width: 480px){
+    .services{
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    .title-skills{
+        margin-top: 4rem;
+        margin-left: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .title-skills > span{
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row ;
+        gap: 10px;
+        margin-left: -0.5rem;
+    }
 }
