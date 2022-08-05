@@ -39,6 +39,7 @@
         align-items: center;
         justify-content: center;
         padding-top: 10rem;
+        padding-right: 0.3rem;
     }
     .portfolio>:nth-child(1) {
         font-size: 2rem;

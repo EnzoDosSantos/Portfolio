@@ -62,7 +62,6 @@
 .t-conteiner{
     display: flex;
     flex-direction: column;
-    padding: 10px
 }
 
 .t-conteiner > :nth-child(1){
@@ -79,7 +78,6 @@
 }
 
 .cards{
-    /* display: none; */
     margin-top: 20px;
     display: flex;
     justify-content: row;
@@ -99,7 +97,6 @@
     display: none;
     margin-right: 8rem;
     margin-top: 1rem;
-    /* margin-left: 2rem; */
 }
 
 .c-c{
@@ -125,23 +122,14 @@
     }
     .title-skills{
         margin-top: 4rem;
-        /* margin-left: 1rem; */
-        /* align-items: flex-start; */
         margin-left: 0;
     }
-
-    /* .title-skills > span{
-        display: flex;
-        flex-direction: column;
-        width: 430px;
-    } */
     .cards{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: row;
         gap: 10px;
-        /* margin-left: -1rem; */
     }
 }
 
@@ -156,14 +144,9 @@
     .c-c{
         display: flex;
     }
-    /* .title-skills{
-        align-items: center;
-    } */
     .t-conteiner{
-        width: 300px;
-        margin-left: 3rem;
+        margin-left: 4rem;
     }
-
     .services{
         padding-top: 15rem;
         padding-bottom: 10rem;
@@ -172,11 +155,21 @@
 
 @media screen and (max-width: 390px){
     .t-conteiner{
-        margin-left: 4rem;
+        margin-left: 5rem;
     }
     .c-res{
         margin-left: 1rem;
     }
 
+}
+
+@media screen and (max-width: 375px){
+    .t-conteiner{
+        margin-left: 6rem;
+        width: 300px;
+    }
+    .c-res{
+        margin-left: 2rem;
+    }
 }
 

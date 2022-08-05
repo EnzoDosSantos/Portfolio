@@ -96,11 +96,8 @@
         padding-bottom: 10rem;
     }
     .c-top{
-        /* display: flex;
-        flex-direction: column; */
         align-items: flex-start;
         justify-content: start;
-        /* margin-left: 1.2rem; */
     }
     .c-buttom > :nth-child(1) > :nth-child(2){
         width: 450px;
@@ -108,27 +105,29 @@
     }
 }
 
-@media screen and (max-width: 475px){
-    .c-input{
-        width: 320px;
-        margin-left: -0.3rem;
+@media screen and (max-width: 495px){
+    .c-input > input {
+        width: 46vh;
     }
-    .contact{ 
-        margin-bottom: 4rem;
+    .c-input > textarea {
+        width: 46vh;
+    }
+    .c-buttom > :nth-child(1){
+        width: 50vh;
+        margin-left: -10px;
+        /* margin-right: 10px; */
+    }
+    .c-input{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .c-buttom > :nth-child(1) > :nth-child(2){
-        width: 450px;
-        margin-left: -5px;
+        width: 46vh;
+        padding: 0;
+
     }
 }
-
-
-@media screen and (max-width: 460px){
-    .c-top{
-        align-items: flex-start;
-        justify-content: start;
-        margin-left: 1.5rem;
-    }
+@media screen and (max-width: 468px){
     .c-input > input {
         width: 40vh;
     }
@@ -139,29 +138,57 @@
         width: 45vh;
         display: flex;
         flex-direction: column;
-        margin-left: 2.5rem;
-    }
-    .c-input > *{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: start;
+        margin-left: 1.5rem;
     }
     .c-buttom > :nth-child(1) > :nth-child(2){
-        width: 45vh;
+        width: 40vh;
         margin-left: 2rem;
         margin-right: 2rem;
     }
-    .c-input > span {
-        width: 50vh;
+}
+
+
+@media screen and (max-width: 450px){
+    .c-buttom{
+        margin-left: 2rem;
     }
 }
 
-@media screen and (max-width: 390px){
-    .c-top{
-        align-items: flex-start;
-        justify-content: start;
-        margin-left: 0rem;
+
+@media screen and (max-width: 425px){
+    .c-input > input {
+        width: 37vh;
+    }
+    .c-input > textarea {
+        width: 37vh;
+    }
+    .c-buttom > :nth-child(1){
+        width: 40vh;
+        margin-right: 5rem;
+    }
+    .c-buttom > :nth-child(1) > :nth-child(2){
+        width: 40vh;
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .c-input > input {
+        width: 32vh;
+    }
+    .c-input > textarea {
+        width: 32vh;
+    }
+    .c-buttom > :nth-child(1){
+        width: 40vh;
+        margin-right: 2rem;
+    }
+    .c-buttom > :nth-child(1) > :nth-child(2){
+        width: 35vh;
+        margin-left: 1.5rem;
+    }
+    .c-input > span{
+        font-size: 0.9rem;
     }
 }
 
