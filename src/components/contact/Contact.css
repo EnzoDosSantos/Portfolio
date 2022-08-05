@@ -88,15 +88,80 @@
     padding-left: 4px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 520px){
     .contact{
         flex-direction: column;
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-
+    .c-top{
+        /* display: flex;
+        flex-direction: column; */
+        align-items: flex-start;
+        justify-content: start;
+        /* margin-left: 1.2rem; */
+    }
     .c-buttom > :nth-child(1) > :nth-child(2){
         width: 450px;
         margin-left: 10px;
     }
 }
+
+@media screen and (max-width: 475px){
+    .c-input{
+        width: 320px;
+        margin-left: -0.3rem;
+    }
+    .contact{ 
+        margin-bottom: 4rem;
+    }
+    .c-buttom > :nth-child(1) > :nth-child(2){
+        width: 450px;
+        margin-left: -5px;
+    }
+}
+
+
+@media screen and (max-width: 460px){
+    .c-top{
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 1.5rem;
+    }
+    .c-input > input {
+        width: 40vh;
+    }
+    .c-input > textarea {
+        width: 40vh;
+    }
+    .c-input{
+        width: 45vh;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5rem;
+    }
+    .c-input > *{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .c-buttom > :nth-child(1) > :nth-child(2){
+        width: 45vh;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .c-input > span {
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .c-top{
+        align-items: flex-start;
+        justify-content: start;
+        margin-left: 0rem;
+    }
+}
+
+

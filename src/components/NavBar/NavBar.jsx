@@ -7,12 +7,12 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
     const ref = useRef(null)
 
     const scrollToSeccion = (ref) => {
-        if(ref === home) {
-            return window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            })
-        }
+        // if(ref === home) {
+        //     return window.scrollTo({
+        //         top: 0,
+        //         behavior: 'smooth'
+        //     })
+        // }
         if(ref === intro){
             return window.scrollTo({
                 top: ref.current.offsetTop - 100,
@@ -20,7 +20,7 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
             })
         }
         return window.scrollTo({
-            top: ref.current.offsetTop + 90,
+            top: ref.current.offsetTop,
             behavior: "smooth",
         })
     }
@@ -47,7 +47,7 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
                 <div className="n-right">
                     <div className="n-list">
                         <ul>
-                            <li onClick={() => scrollToSeccion(home)}>Home</li>
+                            <li onClick={() => scrollToSeccion(ref)}>Home</li>
                             <li onClick={() => scrollToSeccion(intro)}>Sobre mi</li>
                             <li onClick={() => scrollToSeccion(services)}>Habilidades</li>
                             <li onClick={() => scrollToSeccion(portfolio)}>Proyectos</li>

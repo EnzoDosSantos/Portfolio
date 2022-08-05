@@ -32,29 +32,69 @@ const Services = ({ innerRef }) => {
                 <span>¿Con qué herramientas puedo</span>
                 <span>trabajar?</span>
                 <div className="cards">
+                    <Postgres />
+                    <span>POSTGRESSQL</span>
+                    <Mongoose />
+                    <span>MONGOOSE</span>
+                    <MongoDB />
+                    <span>MONGODB</span>
+                    <Express />
+                    <span>EXPRESS</span>
+                    <Node />
+                    <span>NODEJS</span>
+                    <Redux />
+                    <span>REDUX</span>
+                    <React />
+                    <span>REACT</span>
+                    <Css />
+                    <span>CSS</span>
+                    <Html />
+                    <span>HTML</span>
+                    <Js />
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div className="c-res">
+                    <div className="c-c">
                         <Postgres />
                         <span>POSTGRESSQL</span>
+                    </div>
+                    <div className="c-c">
                         <Mongoose />
                         <span>MONGOOSE</span>
-                        <MongoDB />
-                        <span>MONGODB</span>
+                    </div>
+                    <div className="c-c">
+                        <Mongoose />
+                        <span>MONGOOSE</span>
+                    </div>
+                    <div className="c-c">
                         <Express />
                         <span>EXPRESS</span>
+                    </div>
+                    <div className="c-c">
                         <Node />
                         <span>NODEJS</span>
-                        {/* </div>
-                        <div className="cards1"> */}
+                    </div>
+                    <div className="c-c">
                         <Redux />
                         <span>REDUX</span>
+                    </div>
+                    <div className="c-c">
                         <React />
                         <span>REACT</span>
+                    </div>
+                    <div className="c-c">
                         <Css />
                         <span>CSS</span>
+                    </div>
+                    <div className="c-c">
                         <Html />
                         <span>HTML</span>
+                    </div>
+                    <div className="c-c">
                         <Js />
                         <span>JAVASCRIPT</span>
                     </div>
+                </div>
             </div>
         </section>
     )

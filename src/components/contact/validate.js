@@ -17,7 +17,7 @@ const validate = (input) => {
         
     }
     if(input.message.trim(). length < 10){
-        errors.message = 'El mensaje debe tener al menos 10 caracteres.'
+        errors.message = 'El mensaje debe tener más de 10 caracteres.'
     }
     return errors;
 }

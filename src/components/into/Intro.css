@@ -60,7 +60,7 @@
     margin-right: 10px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 520px){
     .intro{
         height: auto;
         overflow-x: hidden;
@@ -72,6 +72,23 @@
     }
     .i-right{
         position: relative;
-        left: 50px;
+        left: 110px;
     }
 }
+
+
+
+@media screen and (max-width: 440px){
+    .i-right{
+        position: relative;
+        left: 60px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .i-right{
+        position: relative;
+        left: 20px;
+    }
+}
+

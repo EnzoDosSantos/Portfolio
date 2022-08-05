@@ -42,7 +42,7 @@
     color: var(--orange);
 }
 
-.c-conteiner-data > :nth-child(1) > a > i{
+.c-conteiner-data > :nth-child(1) > a > span{
     font-size: 20px;
     color: var(--black);
     margin-left: 10px;
@@ -63,15 +63,14 @@
     padding: 10px;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 520px){
     .c-wrapper{
         height: 40vh;
     }
     .c-conteiner-data{
         width: 100%;
     }
-    .c-conteiner-data > :nth-child(1) > a > i{
-        /* width: 200px; */
+    .c-conteiner-data > :nth-child(1) > a > span{
         display: flex;
         flex-direction: row;
         margin-left: 0;
@@ -81,3 +80,25 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 425px){
+    .c-wrapper{
+        height: 40vh;
+        padding: 0;
+    }
+    .c-conteiner-data > :nth-child(1) > a > span{
+        width: 325px;
+        height: 100%;
+    }
+
+    .c-conteiner-data > :nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow-wrap: anywhere;
+        /* justify-content: center;
+        align-items: center; */
+    }
+}
+
+

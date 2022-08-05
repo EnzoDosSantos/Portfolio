@@ -12,7 +12,7 @@ const Card = ({ img, title, detail, link }) => {
                 <a href={link}
                     target="_blank"
                 >
-                    <i>{link}</i>
+                    <span>{link}</span>
                 </a>
             </span>
             </div>
