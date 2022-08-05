@@ -3,7 +3,6 @@ import './NavBar.css'
 
 const NavBar = ({ services, portfolio, contact, intro }) => {
     const [isOpen, setIsOpen] = useState(false)
-    const home = useRef(null)
     const ref = useRef(null)
 
     const scrollToSeccion = (ref) => {

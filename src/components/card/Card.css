@@ -67,6 +67,9 @@
     .c-wrapper{
         height: 40vh;
     }
+    .card{
+        margin-right: 5px;
+    }
     .c-conteiner-data{
         width: 100%;
     }

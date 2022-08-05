@@ -1,13 +1,20 @@
 .footer{
     display: flex;
     align-items: center;
-    margin: -1rem -5rem;
-    position: relative;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background-color: red; */
+    /* background-image: url('../../assets/wave.png'); */
+    /* left: -0.5%; */
 }
 
 .footer > img {
     width: 100%;
-    height: 220px;
+    height: 200px;
 }
 
 .f-conteiner{
@@ -34,9 +41,6 @@
 }
 
 @media screen and (max-width: 520px){
-    .footer{
-        margin: -1rem -1rem;
-    }
     .f-conteiner{
         flex-direction: column;
         width: 100%;

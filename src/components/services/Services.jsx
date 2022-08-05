@@ -26,32 +26,34 @@ const Services = ({ innerRef }) => {
                 <a href={cv} download>
                     <button className="button s-button">Descargar CV</button>
                 </a>
-                {/* <div className="blurs-blurl" style={{ background: "#ABF1FF94" }}></div> */}
             </div>
             <div className="title-skills">
-                <span>¿Con qué herramientas puedo</span>
-                <span>trabajar?</span>
+                <div className="t-conteiner">
+                <span>¿Con qué teconologias</span>
+                <span>puedo trabajar?</span>
+
+                </div>
                 <div className="cards">
-                    <Postgres />
-                    <span>POSTGRESSQL</span>
-                    <Mongoose />
-                    <span>MONGOOSE</span>
+                    <Js />
+                    <span>JAVASCRIPT</span>
+                    <Css />
+                    <span>CSS</span>
+                    <React />
+                    <span>REACT</span>
+                    <Html />
+                    <span>HTML</span>
+                    <Redux />
+                    <span>REDUX</span>
                     <MongoDB />
                     <span>MONGODB</span>
+                    <Mongoose />
+                    <span>MONGOOSE</span>
                     <Express />
                     <span>EXPRESS</span>
                     <Node />
                     <span>NODEJS</span>
-                    <Redux />
-                    <span>REDUX</span>
-                    <React />
-                    <span>REACT</span>
-                    <Css />
-                    <span>CSS</span>
-                    <Html />
-                    <span>HTML</span>
-                    <Js />
-                    <span>JAVASCRIPT</span>
+                    <Postgres />
+                    <span>POSTGRESSQL</span>
                 </div>
                 <div className="c-res">
                     <div className="c-c">

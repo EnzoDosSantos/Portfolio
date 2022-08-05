@@ -16,6 +16,7 @@
     padding: 0.5rem 3.5rem;
     overflow: hidden;
     color: var(--black);
+    margin: 0.3rem;
 }
 
 .button{
@@ -36,10 +37,8 @@
 }
 
 *{
-    /* font-family: 'Roboto', sans-serif; */
     font-family: "Poppins",sans-serif;
-    /* font-family: monospace; */
-
+    margin: 0;
 }
 
 body{
@@ -50,12 +49,6 @@ body{
 
 @media screen and (max-width: 520px){
     .App{
-        padding: 0.5rem 0.5rem;
-    }
-}
-
-@media screen and (max-width: 478px){
-    .App{
-        padding: 0.5rem 0.5rem;
+        padding: 0;
     }
 }

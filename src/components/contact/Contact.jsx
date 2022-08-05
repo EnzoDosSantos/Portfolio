@@ -52,7 +52,7 @@ const Contact = ({ innerRef }) => {
         <section ref={innerRef} className="contact">
             <div className="c-top">
                 <span>¿Quieres contactarme?</span>
-                <span>No lo dudes más, escribeme aqui</span>
+                <span>No lo dudes más, escribeme aquí</span>
             </div>
             <div className="c-buttom">
                 <form onSubmit={sendEmail}>
