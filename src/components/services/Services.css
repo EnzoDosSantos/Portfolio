@@ -144,11 +144,10 @@
     .c-c{
         display: flex;
     }
-    .t-conteiner{
+    /* .t-conteiner{
         margin-left: 3rem;
         width: 400px;
-        /* aca */
-    }
+    } */
     .services{
         padding-top: 15rem;
         padding-bottom: 10rem;
