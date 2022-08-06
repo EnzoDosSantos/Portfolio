@@ -78,4 +78,10 @@ const Burguer = styled.div`
     left: 20px;
   } 
 }
+
+@media screen and (max-width: 365px){
+  .nav-icon-5{
+    left: 10px;
+  } 
+}
 `

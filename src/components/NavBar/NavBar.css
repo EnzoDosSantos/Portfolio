@@ -37,6 +37,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 2.55rem;
+    width: 270px;
 }
 
 .n-name:hover {
@@ -156,9 +157,38 @@
     text-align: center; 
     transition: all .6s ease;
     top: -1000px;
-    margin-top: 7rem;
     cursor: pointer;
 }
+
+.activeBr > ul > :nth-child(1){
+    margin-top: 7rem;
+}
+
+.activeBr > ul > :nth-child(2){
+    margin-top: 2rem;
+}
+.activeBr > ul > :nth-child(3){
+    margin-top: 2rem;
+}
+.activeBr > ul > :nth-child(4){
+    margin-top: 2rem;
+}
+
+.activeBr > ul > :nth-child(5){
+    margin-top: 2rem;
+}
+
+.activeBr > ul > :nth-child(6){
+    margin-top: 2rem;
+}
+
+.activeBr > ul > *:hover{
+    color: var(--orange);
+}
+
+/* .n-disabled{
+    height: 60px;
+} */
 
 .disabled{
     transition: all 0.3s ease;
@@ -166,6 +196,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-left: 2.55rem;
+}
+
+@media screen and (max-width: 1325px){
+    .n-list > ul > li{
+        font-size: 1rem;
+        margin-right: 3rem;
+    }
 }
 
 @media screen and (max-width: 1215px){

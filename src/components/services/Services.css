@@ -1,10 +1,7 @@
 .services {
-    padding: 0.3rem 0.3rem;
+    /* padding: 0.3rem 0.3rem; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh;
-    margin-bottom: 12rem;
+    height: 40vh;
     margin-top: 12rem;
     padding-top: 6rem;
 }
@@ -43,164 +40,12 @@
     align-items: center;
     width: 8rem;
     height: 3rem;
-    margin-top: 12px;
+    margin-top: 1.2rem;
 }
 
 
 .awesome > a{
     width: 160px;
     text-decoration: none;
-}
-
-.title-skills{
-    margin-left: 15rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.t-conteiner{
-    display: flex;
-    flex-direction: column;
-}
-
-.t-conteiner > :nth-child(1){
-    color: var(--black);
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.t-conteiner > :nth-child(2){
-    color: var(--orange);
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 5px;
-}
-
-.cards{
-    margin-top: 20px;
-    display: flex;
-    justify-content: row;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    overflow-wrap: anywhere;
-}
-
-.cards > span {
-    color: var(--gray);
-    font-size: 18px;
-}
-
-.c-res {
-    grid-template-columns: 1fr 1fr;
-    display: none;
-    margin-right: 8rem;
-    margin-top: 1rem;
-}
-
-.c-c{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 4rem;
-}
-
-.c-c > span{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--gray);
-    font-size: 18px;
-}
-
-@media screen and (max-width: 520px){
-    .services{
-        display: flex;
-        flex-direction: column;
-        padding-top: 6rem;
-    }
-    .title-skills{
-        margin-top: 4rem;
-        margin-left: 0;
-    }
-    .cards{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        gap: 10px;
-    }
-}
-
-
-@media screen and (max-width: 450px){
-    .cards{
-        display: none;
-    }
-    .c-res{
-        display: grid;
-    }
-    .c-c{
-        display: flex;
-    }
-    .t-conteiner{
-        margin-left: 2.0rem;
-        width: 400px;
-    }
-    .services{
-        padding-top: 15rem;
-        padding-bottom: 10rem;
-    }
-}
-
-@media screen and (max-width: 440px){
-    .t-conteiner{
-        margin-left: 2.5rem;
-        /* padding-left: 0.5rem; */
-    }
-}
-
-@media screen and (max-width: 425px){
-    .t-conteiner{
-        margin-left: 2.8rem;
-    }
-}
-
-@media screen and (max-width: 415px){
-    .t-conteiner{
-        margin-left: 3.8rem;
-    }
-    .c-res{
-        margin-left: 1rem;
-    }
-
-}
-
-@media screen and (max-width: 400px){
-    .t-conteiner{
-        margin-left: 4.6rem;
-        width: 300px;
-    }
-    .c-res{
-        margin-left: 1.5rem;
-    }
-}
-
-@media screen and (max-width: 380px){
-    .t-conteiner{
-        margin-left: 5.3rem;
-    }
-    .c-res{
-        margin-left: 1.7rem;
-    }
-}
-
-@media screen and (max-width: 360px){
-    .t-conteiner{
-        margin-left: 6rem;
-    }
-    .c-res{
-        margin-left: 2rem;
-    }
 }
 

@@ -195,4 +195,10 @@
     }
 }
 
+@media screen and (max-width: 355px){
+    .c-buttom{
+        margin-right: -1rem;
+    }
+}
+
 

@@ -2,10 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import BurguerButton from './BurguerButton';
 import './NavBar.css'
 
-const NavBar = ({ services, portfolio, contact, intro }) => {
+const NavBar = ({ services, portfolio, contact, intro, technologies }) => {
     const [isOpen, setIsOpen] = useState(false)
     const ref = useRef(null)
-    const home = useRef(null)
 
     const [clicked, setClicked] = useState(false)
     const handleClick = () => {
@@ -54,7 +53,7 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
 
     return (
         <nav ref={ref} className={isOpen ? "navbar active" : "navbar"}>
-            <div className='n-wrapper'>
+            <div className="n-wrapper">
                 <div className="n-left">
                     <div className={clicked ? "disabled" : "n-name"}>{name}</div>
                 </div>
@@ -68,6 +67,7 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
                             <li onClick={() => scrollBurguer(intro)}>Sobre mi</li>
                             <li onClick={() => scrollBurguer(services)}>Habilidades</li>
                             <li onClick={() => scrollBurguer(portfolio)}>Proyectos</li>
+                            <li onClick={() => scrollBurguer(contact)}>Contacto</li>
                         </ul>
                     </div>
                     <div className="n-list">
