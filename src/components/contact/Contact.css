@@ -170,6 +170,9 @@
         width: 40vh;
         margin-left: 1.5rem;
     }
+    .c-input > span{
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 400px){
