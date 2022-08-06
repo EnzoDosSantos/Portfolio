@@ -9,6 +9,10 @@
     transition:all 0.3s ease;
 }
 
+.burger{
+    display: none;
+}
+
 .navbar.active{
     background-color: #56b9fb;
     transition:all 0.3s ease;
@@ -125,8 +129,46 @@
     }
 }
 
+.initial{
+    background-color: #56b9fb;
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all .6s ease;
+}
 
-@media screen and (max-width: 520px){
+.activeBr{
+    border-radius: 0 0 75% 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.activeBr > ul > *{
+    list-style: none;
+    color: var(--black);
+    font-size: 1.9rem;
+    font-weight: bold;
+    text-align: center; 
+    transition: all .6s ease;
+    top: -1000px;
+    margin-top: 7rem;
+    cursor: pointer;
+}
+
+.disabled{
+    transition: all 0.3s ease;
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 2.55rem;
+}
+
+@media screen and (max-width: 1215px){
     .n-list{
         display: none;
     }
@@ -134,9 +176,18 @@
         font-size: 1.5rem;
         font-weight: bold;
         width: 250px;
-        margin-left: -0.6rem;
     }
     .n-button{
         display: none;
+    }
+    .burger{
+        display: block;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .n-name{
+        margin-left: -0.6rem;
     }
 }

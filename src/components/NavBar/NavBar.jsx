@@ -1,18 +1,33 @@
 import { useEffect, useRef, useState } from 'react';
+import BurguerButton from './BurguerButton';
 import './NavBar.css'
 
 const NavBar = ({ services, portfolio, contact, intro }) => {
     const [isOpen, setIsOpen] = useState(false)
     const ref = useRef(null)
+    const home = useRef(null)
+
+    const [clicked, setClicked] = useState(false)
+    const handleClick = () => {
+        setClicked(!clicked)
+    }
 
     const scrollToSeccion = (ref) => {
-        // if(ref === home) {
-        //     return window.scrollTo({
-        //         top: 0,
-        //         behavior: 'smooth'
-        //     })
-        // }
-        if(ref === intro){
+        if (ref === intro) {
+            return window.scrollTo({
+                top: ref.current.offsetTop - 100,
+                behavior: "smooth",
+            })
+        }
+        return window.scrollTo({
+            top: ref.current.offsetTop,
+            behavior: "smooth",
+        })
+    }
+
+    const scrollBurguer = (ref) => {
+        setClicked(false)
+        if (ref === intro) {
             return window.scrollTo({
                 top: ref.current.offsetTop - 100,
                 behavior: "smooth",
@@ -32,8 +47,8 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
             return setIsOpen(false)
         }
         window.addEventListener('scroll', changeNavbarState)
-    } , [])
-    
+    }, [])
+
     const name = "</Enzo Dos Santos>"
 
 
@@ -41,9 +56,20 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
         <nav ref={ref} className={isOpen ? "navbar active" : "navbar"}>
             <div className='n-wrapper'>
                 <div className="n-left">
-                    <div className="n-name">{name}</div>
+                    <div className={clicked ? "disabled" : "n-name"}>{name}</div>
                 </div>
                 <div className="n-right">
+                    <div className="burger">
+                        <BurguerButton clicked={clicked} handleClick={handleClick} />
+                    </div>
+                    <div className={`initial ${clicked ? 'activeBr' : ''}`}>
+                        <ul>
+                            <li onClick={() => scrollBurguer(ref)}>Home</li>
+                            <li onClick={() => scrollBurguer(intro)}>Sobre mi</li>
+                            <li onClick={() => scrollBurguer(services)}>Habilidades</li>
+                            <li onClick={() => scrollBurguer(portfolio)}>Proyectos</li>
+                        </ul>
+                    </div>
                     <div className="n-list">
                         <ul>
                             <li onClick={() => scrollToSeccion(ref)}>Home</li>
@@ -52,7 +78,7 @@ const NavBar = ({ services, portfolio, contact, intro }) => {
                             <li onClick={() => scrollToSeccion(portfolio)}>Proyectos</li>
                         </ul>
                     </div>
-                    <button onClick={() => scrollToSeccion(contact)}  className='n-button'>
+                    <button onClick={() => scrollToSeccion(contact)} className='n-button'>
                         <div className='svg-wrapper-1'>
                             <div className="svg-wrapper">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
