@@ -145,12 +145,20 @@
         display: flex;
     }
     .t-conteiner{
-        margin-left: 4rem;
-        width: 350px;
+        margin-left: 3rem;
+        width: 400px;
+        /* aca */
     }
     .services{
         padding-top: 15rem;
         padding-bottom: 10rem;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .t-conteiner{
+        margin-left: 4rem;
+        /* aca */
     }
 }
 
