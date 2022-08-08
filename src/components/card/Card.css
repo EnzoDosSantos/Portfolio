@@ -1,111 +1,55 @@
 .card{
+    padding: 3rem 5rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    padding: 10px;
-    border-radius: 20px;
-    border: 3px solid #ccc;
+    justify-content: center;
+    border: 1px solid #ccc;
     background-color: #fff;
-    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
-    margin-bottom: 10px;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+    width: fit-content;
+    height: fit-content;
 }
 
-.c-wrapper > img {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-}
-
-.c-wrapper > :nth-child(2) {
-    margin-top: 12px;
+.c-title{
+    width: 330px;
     color: var(--orange);
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
 }
 
-.c-wrapper > :nth-child(3) {
+.c-title:hover{
+    cursor: pointer;
+}
+
+.c-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c-detail > img {
+    width: 100px;
+    height: 100px;
+}
+
+.c-detail-text{
+    margin-left: 3rem;
+    gap: 20px;
+}
+
+.c-detail-text > span{
     margin-top: 12px;
     color: var(--gray);
     font-size: 18px;
     font-weight: bold;
 }
 
-.c-conteiner-data > :nth-child(1) {
-    margin-top: 12px;
+.c-detail-text > a{
+    text-decoration: none;
     color: var(--orange);
     font-size: 20px;
     font-weight: bold;
 }
-
-.c-conteiner-data > :nth-child(1) > a {
-    text-decoration: none;
-    color: var(--orange);
-}
-
-.c-conteiner-data > :nth-child(1) > a > span{
-    font-size: 20px;
-    color: var(--black);
-    margin-left: 10px;
-}
-
-.c-conteiner-data{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.c-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70vh;
-    padding: 10px;
-}
-
-@media screen and (max-width: 520px){
-    .c-wrapper{
-        height: 40vh;
-    }
-    .card{
-        margin-right: 5px;
-    }
-    .c-conteiner-data{
-        width: 100%;
-    }
-    .c-conteiner-data > :nth-child(1) > a > span{
-        display: flex;
-        flex-direction: row;
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-    .c-wrapper{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 425px){
-    .c-wrapper{
-        height: 40vh;
-        padding: 0;
-    }
-    .c-conteiner-data > :nth-child(1) > a > span{
-        width: 325px;
-        height: 100%;
-    }
-
-    .c-conteiner-data > :nth-child(1) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        overflow-wrap: anywhere;
-    }
-}
-
-@media screen and (max-width: 370px){
-    .c-conteiner-data > :nth-child(1) > a > span{
-        font-size: 1rem;
-    }
-}
-
-

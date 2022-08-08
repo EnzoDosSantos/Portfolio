@@ -1,3 +1,4 @@
+// import Card from '../card/Card'
 import Card from '../card/Card'
 import sm from '../../assets/Script_Music.png'
 import pi from '../../assets/App_Gamery.png'
@@ -17,7 +18,7 @@ const Portfolio = ({ innerRef }) => {
                 />
                 <Card
                 img={pi}
-                title={"APP GAMERY"}
+                title={"App Gamery"}
                 detail={"Aplicación web que permite crear juegos nuevos, ver informacón, filtrar y ordenar de más de 100 juegos."}
                 link={"https://github.com/EnzoDosSantos/PI-VideoGames"}
                 />

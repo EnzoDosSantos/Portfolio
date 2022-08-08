@@ -15,6 +15,7 @@ function App() {
   const intro = useRef(null)
   const technologies = useRef(null)
 
+
   return (
     <div className='App'>
       <NavBar
